@@ -24,17 +24,16 @@ dane segment
   wrong_command_error db "Nieznana komenda",13,10,"$"
   wrong_arguments db "Podano nieprawidlowe argumenty",13,10,"$"
 
-	angle		dw	270	; aktualny kierunek ��wia
-	_180_		dw	180	; warto�� 180 potrzebna przy zamianie stopni na radiany
-	_2_		dw	2	; warto�� 2 potrzebna do mno�enia przez dwa
-	_0_		dw	0	; warto�� 2 potrzebna do mno�enia przez dwa
-	x_beg		dw	160	; sta�a, pocz�tkowa wsp. x pozycji ��wia
-	y_beg		dw	100	; sta�a, pocz�tkowa wsp. y pozycji ��wia
-	len		dw	80	; d�ugo�� odcinka
-	xp		dd	160	; wsp. X pocz�tku odcinka
-	yp		dd	100	; wsp. Y pocz�tku odcinka
-	xk		dd	?	; wsp. X ko�ca odcinka
-	yk		dd	?	; wsp. Y ko�ca odcinka
+	angle		dw	270	; aktualny kkat
+	_180_		dw	180	; wartosc 180 potrzebna przy zamianie stopni na radiany
+	_2_		dw	2	; wartosc 2 potrzebna do mnozenia przez dwa
+	x_beg		dw	160	; stala, poczatkowa wsp. x pozycji zowia
+	y_beg		dw	100	; stala, poczatkowa wsp. y pozycji zowia
+	len		dw	80	; dlugosc odcinka
+	xp		dd	160	; wsp. X poczatku odcinka
+	yp		dd	100	; wsp. Y poczatku odcinka
+	xk		dd	?	; wsp. X konca odcinka
+	yk		dd	?	; wsp. Y konca odcinka
 	tmp_integer	dw	?	; tymczasowe miejsce do konwersji float -> int
 	D_Di		dd	?
 	D_y		dd	?
